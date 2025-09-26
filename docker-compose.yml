@@ -1,0 +1,19 @@
+services:
+  template-node-typescript:
+    container_name: template-node-typescript
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - '.:/home/node/app'
+    entrypoint: ./.docker/entrypoint.sh
+    environment:
+      - NODE_ENV=development
+      - GITHUB_TOKEN=$GITHUB_TOKEN
+      - NODE_OPTIONS=--max-old-space-size=$MAX_OLD_SPACE_SIZE
+    ports:
+      - '4200:4200'
+      - '9229:9229'
+      - '9876:9876'
+    mem_limit: $MEM_LIMIT_UI
+    restart: on-failure

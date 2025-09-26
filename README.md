@@ -1,1 +1,1 @@
-# template-node-typescript
+# Template Node.js with TypeScript

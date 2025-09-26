@@ -1,0 +1,22 @@
+{
+  "name": "template-node-typescrypt",
+  "version": "1.0.0",
+  "description": "Template Node.js with TypeScript",
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "debug": "node --inspect=0.0.0.0:9229 dist/index.js"
+  },
+  "devDependencies": {
+    "@types/pg": "8.15.5",
+    "typescript": "5.9.2"
+  },
+  "dependencies": {
+    "axios": "1.12.2",
+    "pg": "8.16.3"
+  }
+}
