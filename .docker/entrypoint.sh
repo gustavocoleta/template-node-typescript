@@ -28,10 +28,4 @@ npm run build
 
 
 echo "Starting application in debug mode"
-npm run debug
-
-# echo "Starting application"
-# npm start
-
-# echo "Container is running, waiting attach..."
-# tail -f /dev/null
+npm run dev:debug
